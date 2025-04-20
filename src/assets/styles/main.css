@@ -1,0 +1,6 @@
+@import './normalize.css';
+@import './colors.css';
+
+html {
+  font-size: 16px;
+}

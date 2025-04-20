@@ -1,6 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/prettierrc",
-  "semi": false,
+  "semi": true,
   "singleQuote": true,
-  "printWidth": 100
+  "quoteProps": "as-needed",
+  "printWidth": 100,
+  "prettier.vueIndentScriptAndStyle": true
 }
