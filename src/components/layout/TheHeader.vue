@@ -1,27 +1,13 @@
 <template>
-  <q-header id="#header" class="header" reveal>
-    <RouterLink :to="homeRoute"
-      ><img src="@/assets/img/logo.svg" alt="Logo" :draggable="false"
-    /></RouterLink>
-    <nav v-if="isLargeScreen">
-      <RouterLink :to="homeRoute">Strona główna</RouterLink>
-      <q-btn-dropdown label="O mnie">
-        <q-list>
-          <q-item clickable v-close-popup>
-            <router-link :to="aboutRoute">O mnie</router-link>
-          </q-item>
-
-          <q-item clickable v-close-popup>
-            <router-link :to="achievementsRoute">Osiągnięcia</router-link>
-          </q-item>
-
-          <q-item clickable v-close-popup>
-            <router-link :to="mediaRoute">W mediach</router-link>
-          </q-item>
-        </q-list>
-      </q-btn-dropdown>
-      <RouterLink :to="galleryRoute">Galeria</RouterLink>
-      <RouterLink :to="offerRoute">Oferta</RouterLink>
+  <q-header id="#header" class="header">
+    <router-link :to="homeRoute"><img src="@/assets/img/logo.svg" alt="Logo" :draggable="false" /></router-link>
+    <nav v-if="isLargeScreen" class="header__nav">
+      <router-link :to="homeRoute">Strona główna</router-link>
+      <router-link :to="aboutRoute">O mnie</router-link>
+      <router-link :to="achievementsRoute">Osiągnięcia</router-link>
+      <router-link :to="mediaRoute">W mediach</router-link>
+      <router-link :to="galleryRoute">Galeria</router-link>
+      <router-link :to="offerRoute">Oferta</router-link>
     </nav>
     <sidebar-toggler v-else />
   </q-header>
@@ -29,14 +15,7 @@
 
 <script setup lang="ts">
 import { useScreen } from '@/composable/useScreen.ts';
-import {
-  homeRoute,
-  aboutRoute,
-  achievementsRoute,
-  galleryRoute,
-  mediaRoute,
-  offerRoute,
-} from '@/views';
+import { homeRoute, aboutRoute, achievementsRoute, galleryRoute, mediaRoute, offerRoute } from '@/views';
 import SidebarToggler from '@/components/layout/SidebarToggler.vue';
 
 const { isLargeScreen } = useScreen();
@@ -51,4 +30,14 @@ const { isLargeScreen } = useScreen();
   display: flex
   justify-content: space-between
   align-items: center
+  border-bottom: 1px solid var(--tertiary-bg)
+
+  &__nav
+    display: flex
+    height: 100%
+    align-items: center
+
+    a
+      display: inline-block
+      padding: .5rem
 </style>

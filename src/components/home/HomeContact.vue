@@ -22,6 +22,9 @@ import { BaseButton } from '@/components/base';
   flex-direction: column
   gap: 2rem
 
+  h3
+    font-size: 2rem
+
   &__block
     display: flex
     flex-direction: column

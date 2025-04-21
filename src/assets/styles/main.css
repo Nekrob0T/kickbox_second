@@ -48,3 +48,13 @@ h1 {
   font-size: 4rem;
   line-height: 4rem;
 }
+
+a {
+  color: var(--link);
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    color: var(--link-hover);
+  }
+}

@@ -31,6 +31,7 @@ import { BaseBlock } from '@/components/base';
     justify-content: space-between
     align-items: center
     flex-direction: column
+    gap: 1rem
     background: var(--tertiary-bg)
     flex-grow: 1
     text-align: center
