@@ -10,12 +10,12 @@
   >
     <q-icon class="sidebar__close" name="close" @click="layout.toggleSidebar()" />
     <nav class="sidebar__nav">
-      <router-link :to="homeRoute">Strona główna</router-link>
-      <router-link :to="aboutRoute">O mnie</router-link>
-      <router-link :to="achievementsRoute">Osiągnięcia</router-link>
-      <router-link :to="mediaRoute">W mediach</router-link>
-      <router-link :to="galleryRoute">Galeria</router-link>
-      <router-link :to="offerRoute">Oferta</router-link>
+      <router-link :to="homeRoute"> Strona główna </router-link>
+      <router-link :to="aboutRoute"> O mnie </router-link>
+      <router-link :to="achievementsRoute"> Osiągnięcia </router-link>
+      <router-link :to="mediaRoute"> W mediach </router-link>
+      <router-link :to="galleryRoute"> Galeria </router-link>
+      <router-link :to="offerRoute"> Oferta </router-link>
     </nav>
   </q-drawer>
 </template>

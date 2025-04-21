@@ -2,11 +2,11 @@
   <div class="contact">
     <div class="contact__block">
       <h3>Chcesz dowiedzieć się więcej?</h3>
-      <base-button label="Poznaj moją historię" :to="aboutRoute"></base-button>
+      <base-button label="Poznaj moją historię" :to="aboutRoute" />
     </div>
     <div class="contact__block">
       <h3>Chcesz uczyć się od najlepszych?</h3>
-      <base-button label="Umów się na trening" :to="offerRoute"></base-button>
+      <base-button label="Umów się na trening" :to="offerRoute" />
     </div>
   </div>
 </template>

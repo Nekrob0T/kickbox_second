@@ -3,7 +3,7 @@
     <h1>Najważniejsze sukcesy</h1>
 
     <div class="achievements">
-      <base-block variant="tertiary" class="achievements__card" v-for="(item, i) in achievements" :key="i">
+      <base-block v-for="(item, i) in achievements" :key="i" variant="tertiary" class="achievements__card">
         <p>{{ item }}</p>
       </base-block>
     </div>
