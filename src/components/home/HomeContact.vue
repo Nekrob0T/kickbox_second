@@ -19,7 +19,8 @@ import { BaseButton } from '@/components/base';
 <style scoped lang="sass">
 .contact
   display: flex
-  flex-direction: column
+  justify-content: space-between
+  flex-wrap: wrap
   gap: 2rem
 
   h3
@@ -28,7 +29,11 @@ import { BaseButton } from '@/components/base';
   &__block
     display: flex
     flex-direction: column
-    gap: 1rem
+    gap: 1.5rem
+    flex-grow: 1
+
+    :deep(.q-btn)
+      width: 100%
 
     @media screen and (min-width: 480px)
       :deep(.q-btn)
