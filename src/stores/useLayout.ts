@@ -1,12 +1,22 @@
-import { defineStore } from 'pinia'
-import { ref } from 'vue'
+import { defineStore } from 'pinia';
+import { ref } from 'vue';
 
-export const useLayout = defineStore('layout', () => {
-  const sidebar = ref(false)
-  function toggleSidebar() {
-    sidebar.value = !sidebar.value
-    console.log('sidebr is: ', sidebar.value)
-  }
-
-  return { sidebar, toggleSidebar }
-})
+export const useLayout = defineStore('layout', {
+  state: () => {
+    return { sidebar: false, popup: null };
+  },
+  actions: {
+    toggleSidebar() {
+      this.sidebar = !this.sidebar;
+      console.log('sidebar is: ', this.sidebar);
+    },
+    setPopup(obj) {
+      this.popup = obj;
+      console.log('popup is: ', obj);
+    },
+    closePopup() {
+      this.popup = null;
+      console.log('popup is: ', null);
+    },
+  },
+});

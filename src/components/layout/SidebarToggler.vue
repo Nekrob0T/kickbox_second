@@ -1,11 +1,11 @@
 <template>
-  <q-btn dense flat round icon="menu" @click="toggleSidebar" />
+  <q-btn dense flat round icon="menu" @click="layout.toggleSidebar()" />
 </template>
 
 <script setup lang="ts">
-import { useLayout } from '@/stores/useLayout.ts'
+import { useLayout } from '@/stores/useLayout.ts';
 
-const { toggleSidebar } = useLayout()
+const layout = useLayout();
 </script>
 
 <style scoped lang="sass"></style>

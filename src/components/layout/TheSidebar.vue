@@ -1,13 +1,13 @@
 <template>
-  <q-drawer v-model="sidebar" side="right" behavior="mobile">
+  <q-drawer v-model="layout.sidebar" side="right" behavior="mobile">
     <!-- drawer content -->
   </q-drawer>
 </template>
 
 <script setup lang="ts">
-import { useLayout } from '@/stores/useLayout.ts'
+import { useLayout } from '@/stores/useLayout.ts';
 
-const { sidebar } = useLayout()
+const layout = useLayout();
 </script>
 
 <style scoped lang="sass"></style>

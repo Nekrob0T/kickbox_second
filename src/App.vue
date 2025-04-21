@@ -2,6 +2,7 @@
   <q-layout view="hHr lpR fFr">
     <the-header />
     <the-sidebar />
+    <the-popup />
 
     <q-page-container>
       <div class="main-container">
@@ -15,9 +16,7 @@
 
 <script setup lang="ts">
 import { RouterView } from 'vue-router';
-import TheHeader from '@/components/layout/TheHeader.vue';
-import TheSidebar from '@/components/layout/TheSidebar.vue';
-import TheFooter from '@/components/layout/TheFooter.vue';
+import { TheHeader, TheSidebar, TheFooter, ThePopup } from '@/components/layout';
 </script>
 
 <style scoped lang="sass">
