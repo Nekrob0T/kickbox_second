@@ -19,7 +19,6 @@ import i7 from '@/assets/img/gallery/7.jpg';
 import i8 from '@/assets/img/gallery/8.jpg';
 import i9 from '@/assets/img/gallery/9.jpg';
 import i10 from '@/assets/img/gallery/10.jpg';
-import i11 from '@/assets/img/gallery/11.jpg';
 
 interface GalleryCard {
   title: string;
@@ -34,9 +33,9 @@ const gallery: GalleryCard[] = [
     link: 'https://pl.wikipedia.org/wiki/Piotr_Siegoczy%C5%84ski',
   },
   {
-    title: 'Trening z Piotrem Siegoczyński',
+    title: 'Michael Kuhr vs. Piotr Siegoczyński',
     src: i2,
-    link: 'https://kickcenter.pl/',
+    link: 'https://www.youtube.com/watch?v=92KpFg-MoLc',
   },
   {
     title: 'Seminarium z Mistrzem Świata w Kickboxingu',
@@ -78,11 +77,6 @@ const gallery: GalleryCard[] = [
     src: i10,
     link: 'https://www.youtube.com/watch?v=B8KQX6zDZmo',
   },
-  {
-    title: 'Michael Kuhr vs. Piotr Siegoczyński',
-    src: i11,
-    link: 'https://www.youtube.com/watch?v=92KpFg-MoLc',
-  },
 ];
 </script>
 
@@ -90,6 +84,6 @@ const gallery: GalleryCard[] = [
 .gallery
   display: flex
   flex-wrap: wrap
-  justify-content: space-between
+  justify-content: space-around
   gap: 2rem
 </style>

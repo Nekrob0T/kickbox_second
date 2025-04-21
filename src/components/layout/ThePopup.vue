@@ -1,5 +1,5 @@
 <template>
-  <div class="popup" v-if="layout.popup">
+  <div class="popup" ref="popup">
     <div class="popup__overlay"></div>
     <q-icon class="popup__close" name="close" @click="layout.closePopup()" />
     <div class="popup__modal">
@@ -9,15 +9,22 @@
 </template>
 
 <script setup lang="ts">
-import { useLayout } from '@/stores/useLayout.ts';
 import GalleryCard from '@/components/gallery/GalleryCard.vue';
-import { computed } from 'vue';
+import { onMounted, onUnmounted, ref } from 'vue';
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock-upgrade';
+import { useLayout } from '@/stores/useLayout.ts';
 
 const layout = useLayout();
+const popup = ref(null);
 
-const temp = computed(() => {
-  console.log('shit');
-  return layout.popup;
+onMounted(() => {
+  disableBodyScroll(document.body, {
+    reserveScrollBarGap: true,
+  });
+});
+
+onUnmounted(() => {
+  enableBodyScroll(document.body);
 });
 </script>
 

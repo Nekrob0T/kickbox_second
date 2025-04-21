@@ -2,7 +2,7 @@
   <q-layout view="hHr lpR fFr">
     <the-header />
     <the-sidebar />
-    <the-popup />
+    <the-popup v-if="layout.popup" />
 
     <q-page-container>
       <div class="main-container">
@@ -17,6 +17,9 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router';
 import { TheHeader, TheSidebar, TheFooter, ThePopup } from '@/components/layout';
+import { useLayout } from '@/stores/useLayout.ts';
+
+const layout = useLayout();
 </script>
 
 <style scoped lang="sass">

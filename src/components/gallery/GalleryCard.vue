@@ -4,7 +4,7 @@
 
     <div class="card__caption">
       <p>{{ item.title }}</p>
-      <a :href="item.link"><img src="@/assets/img/open_in_new.svg" alt="" /></a>
+      <a :href="item.link" target="_blank"><img src="@/assets/img/open-in-new.svg" alt="" /></a>
     </div>
   </div>
 </template>
@@ -40,7 +40,7 @@ const props = defineProps<{ item: Item; isWide?: boolean }>();
     transform: scale(1.03)
 
     #{$s}__caption
-      display: block
+      display: flex
 
   &__wrapper
     width: 100vw
@@ -51,7 +51,9 @@ const props = defineProps<{ item: Item; isWide?: boolean }>();
     aspect-ratio: var(--a)
 
   &__caption
-    display: none
+    display: flex
+    justify-content: space-between
+    align-items: center
     z-index: 1
     position: absolute
     width: 100%
@@ -62,13 +64,21 @@ const props = defineProps<{ item: Item; isWide?: boolean }>();
     background: var(--primary-bg)
     opacity: .8
 
+    a
+      width: 12px
+      height: 12px
+
   &.wide
     --w: 60vw
     --a: 3 / 2
+
+    &:hover
+      cursor: default
+      transform: none
 
     @media screen and (max-width: 600px)
       --w: 100vw
 
     #{$s}__caption
-      display: block
+      display: flex
 </style>
