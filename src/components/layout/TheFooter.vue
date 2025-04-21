@@ -33,4 +33,8 @@
 
   &__description p
     white-space: nowrap
+    line-height: 1.5rem
+
+    @media screen and (max-width: 400px)
+      white-space: break-spaces
 </style>

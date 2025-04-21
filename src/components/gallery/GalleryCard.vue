@@ -53,7 +53,7 @@ const props = defineProps<{ item: Item; isWide?: boolean }>();
     aspect-ratio: var(--a)
 
   &__caption
-    display: flex
+    display: none
     justify-content: space-between
     align-items: center
     z-index: 1

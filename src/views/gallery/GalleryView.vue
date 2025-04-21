@@ -1,5 +1,7 @@
 <template>
   <base-block offset="responsive" class="content">
+    <h1>Moje sportowe chwile</h1>
+
     <div class="gallery">
       <gallery-card v-for="(item, i) in gallery" :item="item" :key="i" />
     </div>
@@ -19,6 +21,7 @@ import i7 from '@/assets/img/gallery/7.jpg';
 import i8 from '@/assets/img/gallery/8.jpg';
 import i9 from '@/assets/img/gallery/9.jpg';
 import i10 from '@/assets/img/gallery/10.jpg';
+import { useMeta } from '@/composable/useMeta.ts';
 
 interface GalleryCard {
   title: string;
@@ -78,9 +81,15 @@ const gallery: GalleryCard[] = [
     link: 'https://www.youtube.com/watch?v=B8KQX6zDZmo',
   },
 ];
+
+const { titleAuthor } = useMeta();
+
+titleAuthor('Moje sportowe chwile');
 </script>
 
 <style scoped lang="sass">
+h1
+  margin-bottom: 3rem
 .gallery
   display: flex
   flex-wrap: wrap
