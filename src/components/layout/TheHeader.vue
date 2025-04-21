@@ -1,6 +1,6 @@
 <template>
   <q-header id="#header" class="header" reveal>
-    <img src="@/assets/img/logo.svg" alt="Logo" />
+    <img src="@/assets/img/logo.svg" alt="Logo" :draggable="false" />
     <nav v-if="isLargeScreen">
       <RouterLink :to="homeRoute">Strona główna</RouterLink>
       <q-btn-dropdown label="O mnie">
@@ -41,11 +41,11 @@ const { isLargeScreen } = useScreen();
 </script>
 
 <style scoped lang="sass">
-header
+.header
   width: 100%
   height: 56px
-  background: var(--header-background)
-  padding: .5rem
+  background: var(--secondary-bg)
+  padding: .5rem 1rem
   display: flex
   justify-content: space-between
   align-items: center

@@ -1,0 +1,16 @@
+:root {
+  --primary-bg: #0d0d0d; /* Page background */
+  --secondary-bg: #1a1a1a; /* section background */
+  --tertiary-bg: #2a2a2a; /* card background */
+
+  --primary-text: #ffffff; /* Primary text */
+  --secondary-text: #bbbbbb; /* Secondary text */
+
+  --brand: #d32f2f; /* Call to Action button color */
+  --brand-hover: #ff1744; /* CTA hover */
+
+  --link: #f44336; /* Link color */
+  --link-hover: #ff7961; /* Link hover */
+
+  --app-max-width: 1140px;
+}

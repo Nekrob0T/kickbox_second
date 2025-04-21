@@ -4,7 +4,9 @@
     <the-sidebar />
 
     <q-page-container>
-      <router-view />
+      <div class="main-container">
+        <router-view />
+      </div>
     </q-page-container>
 
     <the-footer />
@@ -12,10 +14,14 @@
 </template>
 
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
-import TheHeader from '@/components/layout/TheHeader.vue'
-import TheSidebar from '@/components/layout/TheSidebar.vue'
-import TheFooter from '@/components/layout/TheFooter.vue'
+import { RouterView } from 'vue-router';
+import TheHeader from '@/components/layout/TheHeader.vue';
+import TheSidebar from '@/components/layout/TheSidebar.vue';
+import TheFooter from '@/components/layout/TheFooter.vue';
 </script>
 
-<style scoped lang="sass"></style>
+<style scoped lang="sass">
+.main-container
+  max-width: var(--app-max-width)
+  margin: 2rem auto
+</style>
