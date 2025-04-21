@@ -9,8 +9,8 @@ import { computed } from 'vue';
 
 const props = withDefaults(
   defineProps<{
-    variant: 'primary' | 'secondary' | 'tertiary';
-    offset: 'responsive' | 'offset';
+    variant?: 'primary' | 'secondary' | 'tertiary';
+    offset?: 'responsive' | 'offset';
   }>(),
   {
     variant: 'secondary',

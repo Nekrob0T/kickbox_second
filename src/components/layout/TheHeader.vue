@@ -1,6 +1,8 @@
 <template>
   <q-header id="#header" class="header" reveal>
-    <img src="@/assets/img/logo.svg" alt="Logo" :draggable="false" />
+    <RouterLink :to="homeRoute"
+      ><img src="@/assets/img/logo.svg" alt="Logo" :draggable="false"
+    /></RouterLink>
     <nav v-if="isLargeScreen">
       <RouterLink :to="homeRoute">Strona główna</RouterLink>
       <q-btn-dropdown label="O mnie">

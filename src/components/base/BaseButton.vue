@@ -1,5 +1,5 @@
 <template>
-  <q-btn flat :label="label" ripple class="base-button" :class="cssClass" :to="to"></q-btn>
+  <q-btn flat :label="label ?? 'Button'" ripple class="base-button" :class="cssClass" :to="to"></q-btn>
 </template>
 
 <script setup lang="ts">
@@ -8,8 +8,8 @@ import type { RouteLocation } from 'vue-router';
 
 const props = withDefaults(
   defineProps<{
-    variant: 'primary';
-    label: string;
+    variant?: 'primary';
+    label?: string;
     to?: RouteLocation;
   }>(),
   {

@@ -6,10 +6,9 @@
       <h3>Sportowiec. Trener. Motywator</h3>
     </div>
     <p class="main__description">
-      Witaj na mojej oficjalnej stronie! Nazywam się Piotr Siegoczyński i od ponad 30 lat jestem
-      związany ze sportami walki. Jako wielokrotny mistrz świata w kickboxingu, wiem, jaką wartość
-      mają pasja, dyscyplina i nieustanne dążenie do celu. Zapraszam Cię do świata sportu, w którym
-      pokonywanie własnych ograniczeń staje się codziennością.
+      Witaj na mojej oficjalnej stronie! Nazywam się Piotr Siegoczyński i od ponad 30 lat jestem związany ze sportami
+      walki. Jako wielokrotny mistrz świata w kickboxingu, wiem, jaką wartość mają pasja, dyscyplina i nieustanne
+      dążenie do celu. Zapraszam Cię do świata sportu, w którym pokonywanie własnych ograniczeń staje się codziennością.
     </p>
   </div>
 </template>
@@ -41,14 +40,11 @@
     font-weight: 500
     align-items: center
 
-    h1
-      font-size: 4rem
-
   &__description
     color: var(--secondary-text)
 
   img
-    filter: brightness(.5)
+    filter: brightness(.2)
     position: absolute
     top: 0
     left: 0

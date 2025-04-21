@@ -43,3 +43,8 @@ html {
 img {
   user-select: none;
 }
+
+h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+}
