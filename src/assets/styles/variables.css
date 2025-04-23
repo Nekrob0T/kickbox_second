@@ -1,16 +1,16 @@
 :root {
-  --primary-bg: #0d0d0d; /* Page background */
-  --secondary-bg: #1a1a1a; /* section background */
-  --tertiary-bg: #2a2a2a; /* card background */
+  --primary-bg: #2b1a17; /* Głęboki brązowo-czerwony */
+  --secondary-bg: #472926; /* Ciepłe tło sekcji */
+  --tertiary-bg: #6a3b35; /* Tło kart */
 
-  --primary-text: #ffffff; /* Primary text */
-  --secondary-text: #bbbbbb; /* Secondary text */
+  --primary-text: #fdf4f0; /* Jasny kremowy */
+  --secondary-text: #e6c7c2; /* Ciepły róż/beż */
 
-  --brand: #d32f2f; /* Call to Action button color */
-  --brand-hover: #ff1744; /* CTA hover */
+  --brand: #ff4c4c; /* Ciepły czerwony */
+  --brand-hover: #ff8877; /* Jaśniejszy, zachęcający hover */
 
-  --link: #f44336; /* Link color */
-  --link-hover: #ff7961; /* Link hover */
+  --link: #ff6b6b; /* Linki */
+  --link-hover: #ffc2b3; /* Hover */
 
   --app-max-width: 1140px;
 }
