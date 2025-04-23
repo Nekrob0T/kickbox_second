@@ -11,7 +11,9 @@
 
 <style scoped lang="sass">
 .motivation
-  height: 400px
+  --motivation-height: 400px
+
+  height: var(--motivation-height)
   position: relative
   display: flex
   flex-direction: column
@@ -19,6 +21,9 @@
   align-items: center
   text-align: center
   padding: 1.5rem
+
+  @media screen and (max-width: 600px)
+    --motivation-height: 200px
 
   &__text
     position: relative
@@ -31,5 +36,5 @@
     top: 0
     left: 0
     width: 100%
-    height: 400px
+    height: var(--motivation-height)
 </style>
