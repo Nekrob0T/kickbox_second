@@ -29,4 +29,7 @@ const layout = useLayout();
 
 :deep(.q-page-container)
   padding-bottom: 0 !important
+  display: flex
+  flex-direction: column
+  justify-content: space-between
 </style>
