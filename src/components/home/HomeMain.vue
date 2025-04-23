@@ -26,9 +26,6 @@
   position: relative
   height: var(--main-height)
 
-  @media screen and (max-width: 600px)
-    --main-height: 500px
-
   &__title,
   &__description
     z-index: 1
@@ -42,6 +39,7 @@
 
   &__description
     color: var(--secondary-text)
+    font-size: 1.5rem
 
   img
     filter: brightness(.2)

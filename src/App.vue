@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="hHr lpR fFr">
+  <q-layout view="hHr lpR fFf">
     <the-header />
     <the-sidebar />
     <the-popup v-if="layout.popup" />
@@ -8,9 +8,9 @@
       <div class="main-container">
         <router-view />
       </div>
-    </q-page-container>
 
-    <the-footer />
+      <the-footer />
+    </q-page-container>
   </q-layout>
 </template>
 
@@ -26,4 +26,7 @@ const layout = useLayout();
 .main-container
   max-width: var(--app-max-width)
   margin: 2rem auto
+
+:deep(.q-page-container)
+  padding-bottom: 0 !important
 </style>

@@ -22,6 +22,7 @@
   display: flex
   justify-content: space-between
   gap: 2rem
+  position: static
   border-top: 1px solid var(--tertiary-bg)
 
   &__title,
@@ -29,11 +30,14 @@
     display: flex
     flex-direction: column
     gap: 1rem
+
+  &__description
     justify-content: space-between
 
-  &__description p
-    white-space: nowrap
-    line-height: 1.5rem
+    p
+      white-space: nowrap
+      line-height: 1.5rem
+      max-width: 350px
 
     @media screen and (max-width: 400px)
       white-space: break-spaces

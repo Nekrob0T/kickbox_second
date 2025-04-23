@@ -2,7 +2,7 @@
   <div class="contact">
     <div class="contact__block">
       <h3>Chcesz dowiedzieć się więcej?</h3>
-      <base-button label="Poznaj moją historię" :to="aboutRoute" />
+      <base-button label="Zobacz osiągnięcia" :to="achievementsRoute" />
     </div>
     <div class="contact__block">
       <h3>Chcesz uczyć się od najlepszych?</h3>
@@ -12,7 +12,7 @@
 </template>
 
 <script setup lang="ts">
-import { aboutRoute, offerRoute } from '@/views';
+import { achievementsRoute, offerRoute } from '@/views';
 import { BaseButton } from '@/components/base';
 </script>
 

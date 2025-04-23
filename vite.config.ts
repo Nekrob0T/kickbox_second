@@ -6,9 +6,7 @@ import { quasar, transformAssetUrls } from '@quasar/vite-plugin';
 
 // https://vite.dev/config/
 export default defineConfig({
-
-  root: '',
-  base: '/kickbox_first/',
+  base: '/kickbox_second/',
   plugins: [
     vue({
       template: { transformAssetUrls },

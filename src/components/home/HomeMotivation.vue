@@ -2,9 +2,9 @@
   <div class="motivation">
     <img src="@/assets/img/training.jpg" alt="" :draggable="false" />
     <h2 class="motivation__text">
-      Mistrz nie rodzi się na ringu<br />
+      Nie urodziłem się mistrzem<br />
       –<br />
-      mistrz rodzi się na treningu.
+      stałem się nim.
     </h2>
   </div>
 </template>
